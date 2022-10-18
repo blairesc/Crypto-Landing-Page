@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="./images/globaltrade-logo.png">
+    <link rel="icon" type="image" href="./images/favicon.png">
     <title>Global Trade</title>
 
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
     <!--Tailwind CSS Link-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
-    <!--Header-->
-    <header class="">
-        <navbar>
-            <div class="">
-                <a href="#">
-                    <img src="./images/globaltrade-logo.png" alt="Global Trade Logo" width="60px">
-                    <span class="">global trade</span>
-                </a>
-            </div>
+    <!--Navigation Bar-->
+    <header>
+        <navbar class="flex item-center justify-between flex-wrap p-4 shadow">
+            <a href="#">
+                <span class="cursor-pointer">
+                    <img src="./images/globaltrade-logo.png" alt="Global Trade Logo" width="185">
+                </span>
+            </a>
             
-            <div class="">
-                <a href="#" class="">exchange</a>
-                <a href="#" class="">learn</a>
-                <a href="#" class="">products</a>
-                <a href="#" class="">support</a>
-                <a href="#" class="">about us</a>
-            </div>
+            <button class="menu-bar lg:hidden cursor-pointer text-2xl mx-2 p-3 inline-flex hover:text-[#0c4df1] rounded ml-auto">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-items hidden lg:flex lg:w-auto lg:items-center w-full transition-all ease-in duration-500">
+                <li class="lg:my-0 mx-4 my-10">
+                    <a href="#" class="text-l font-semibold hover:text-[#0c4df1]">Exchange</a>
+                </li>
+                <li class="lg:my-0 mx-4 my-10">
+                    <a href="#" class="text-l font-semibold hover:text-[#0c4df1]">Learn</a>
+                </li>
+                <li class="lg:my-0 mx-4 my-10">
+                    <a href="#" class="text-l font-semibold hover:text-[#0c4df1]">Products</a>
+                </li>
+                <li class="lg:my-0 mx-4 my-10">
+                    <a href="#" class="text-l font-semibold hover:text-[#0c4df1]">Support</a>
+                </li>
+                <li class="lg:my-0 mx-4 my-10">
+                    <a href="#" class="text-l font-semibold hover:text-[#0c4df1]">About Us</a>
+                </li>
+            </ul>
             
-            <div>
-                <a href="#" class="">sign in</a>
-                <a href="#" class="">sign up</a>
+            <div class="nav-sign hidden lg:flex lg:items-center lg:ml-0 lg:mt-0  ml-4 mt-3">
+                <button class="text-l font-semibold hover:text-[#0c4df1]">Sign In</button>
+                <button class="bg-[#0c4df1] text-white text-l font-semibold px-10 py-4 lg:px-4 lg:py-2 mx-4 rounded-md hover:bg-[#4484fc] duration-500">Sign Up</button>
             </div>
         </navbar>
     </header>
 
+    <!--JS Script-->
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
